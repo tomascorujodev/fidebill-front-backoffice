@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/CSS/ViewLogin.css";
+import "../assets/css/ViewLogin.css";
 import { POST } from "../Services/Fetch";
 import { useLocation } from "react-router-dom";
 
