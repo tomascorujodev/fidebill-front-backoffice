@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { GET, POST } from "../Services/Fetch";
 import Card from "../Components/Card";
 import Button from "../Components/Button";
-import "../assets/CSS/ViewPuntos.css";
+import "../assets/css/ViewPuntos.css";
 import imprimirComprobante from "../Utils/imprimirComprobante";
 import CheckOnline from "../Utils/CheckOnline";
 
