@@ -1,0 +1,186 @@
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 290px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 15px auto;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 420px;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.promo-card.expanded {
+  height: auto;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.promo-card-header {
+  position: relative;
+  height: 217.5px;
+  width: 100%;
+  background: linear-gradient(135deg, #efecf3 20%, #722828 100%);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-logo {
+  height: 217.5px;
+  width: 290px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+  border-radius: 12px;
+}
+
+.promo-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4757;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.promo-card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.promo-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.promo-description {
+  max-height: 72px;
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.promo-details {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.promo-card.expanded .promo-details {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.promo-detail-item {
+  margin-bottom: 12px;
+}
+
+.promo-detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #444;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.modify-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.detail-value {
+  color: #666;
+}
+
+.sucursales-list {
+  margin: 5px 0 0 0;
+  padding-left: 20px;
+}
+
+.sucursales-list li {
+  margin-bottom: 3px;
+}
+
+.promo-button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.promo-button:hover {
+  background-color: #1a5dc8;
+}
+
+.promo-button:active {
+  transform: scale(0.98);
+}
+
+.promo-card-footer {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #eee;
+  text-align: right;
+}
+
+.empresa-name {
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .promo-card {
+    justify-items: center
+  }
+
+  .promo-card-header {
+    height: 120px;
+  }
+
+  .promo-title {
+    font-size: 20px;
+  }
+
+  .promo-description {
+    font-size: 14px;
+  }
+}

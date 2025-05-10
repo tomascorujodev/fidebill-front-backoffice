@@ -1,0 +1,24 @@
+.rounded-navbar {
+    background-color: #ffffff;
+    border-radius: 50px; /* Hace los bordes redondeados */
+    border: 4px solid #0c2d5e; /* Borde fino de otro color */
+    padding: 10px;
+  }
+
+  .rounded-navbar {
+    font-family: "Poppins", sans-serif !important;
+  }
+  .navbar-nav .nav-link {
+    font-family: "Poppins", sans-serif !important;
+  }
+
+  .card-rounded{
+    font-family: "Poppins", sans-serif !important;
+    border-radius: 30px; /* Bordes redondeados */
+    border: 4px solid #0c2d5e; /* Borde fino de otro color (ajústalo si quieres) */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 15px; /* Espaciado interno */
+    background-color: #ffffff; /* Asegura que tenga un fondo */
+    margin-bottom: 20px;
+  }
+  

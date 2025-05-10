@@ -1,0 +1,31 @@
+.custom-input {
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .custom-input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .custom-button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 40%) 0px 1rem 2rem;
+  }
+  
+  

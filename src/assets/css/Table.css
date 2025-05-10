@@ -1,0 +1,12 @@
+.table {
+    width: 100%;
+    margin: 0 auto; /* Centra la tabla dentro de su contenedor */
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+  }
+  
+  .table th, .table td {
+    text-align: center; /* Centra el texto dentro de las celdas */
+    vertical-align: middle; /* Centra verticalmente el contenido */
+    padding: 10px; /* Añade espacio interno para mejorar la presentación */
+  }
+  
